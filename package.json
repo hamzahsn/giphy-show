@@ -13,12 +13,39 @@
     "start:client": "run-p watch:css dev:client",
     "build:client": "cross-env NODE_ENV=production webpack --config config/webpack.config.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged "
+    }
+  },
+  "lint-staged": {
+    "src/**/*.tsx": [
+      "eslint . --fix",
+      "git add"
+    ],
+    "src/**/*.scss": [
+      "stylelint --syntax scss --fix",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hamzahsn/giphy-show.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Giphy",
+    "typescript",
+    "react",
+    "webpack"
+  ],
+  "author": {
+    "name": "Hamza Amdouni",
+    "email": "amdouni.hamza.hsn@gmail.com",
+    "url": "https://iamhamza.io"
+  },
+  "engines": {
+    "node": ">=12.18.3"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hamzahsn/giphy-show/issues"
