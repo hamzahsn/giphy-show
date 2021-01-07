@@ -18,7 +18,13 @@
     "noUnusedParameters": true,
     "jsx": "react",
     "downlevelIteration": true,
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@typings/*": ["./typings/index"],
+      "@styles/*": ["./lib/*"],
+      "@services/*": ["./services/*"]
+    }
   },
   "include": ["src"]
 }
