@@ -24,7 +24,9 @@ cache:
 
 script:
   - npm i
-  - npm run format
+  - npm run lint
+  - npm run style:lint
+  - npm run test
   - npm run build-client
 
 deploy:
