@@ -21,7 +21,6 @@ export const searchTrendingGif = (offset = 10) => {
         ]
       }, [] as IGif[])
     })
-    .then(data => console.log(data))
     .catch(err => {
       console.log(err)
     })
@@ -46,7 +45,6 @@ export const searchGif = (searchTerm: string, offset?: number) => {
         ]
       }, [] as IGif[])
     })
-    .then(data => console.log(data))
     .catch(err => {
       console.log(err)
     })
