@@ -1,9 +1,9 @@
-const path = require("path");
+const path = require('path')
 
 module.exports = {
-  src: path.resolve(__dirname, "../src"),
-  build: path.resolve(__dirname, "../dist"),
-  public: path.resolve(__dirname, "../public"),
-  root: path.resolve(__dirname, "../"),
-  nodeModulesPath: path.resolve(__dirname, "../node_modules"),
-};
+  src: path.resolve(__dirname, '../src'),
+  build: path.resolve(__dirname, '../dist'),
+  public: path.resolve(__dirname, '../public'),
+  root: path.resolve(__dirname, '../'),
+  nodeModulesPath: path.resolve(__dirname, '../node_modules')
+}
