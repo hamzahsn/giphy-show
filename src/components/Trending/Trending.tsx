@@ -1,6 +1,7 @@
 import { IMinimizedGif } from '@typings/'
 import React, { useState } from 'react'
 import { nanoid } from 'nanoid'
+import { Image } from '@styles/Image/Image'
 import { searchTrendingGif } from '../../services/giphy'
 import { useIntersectionObserver } from '../../hooks/useIntersectionObserver'
 import styles from './Trending.scss'
@@ -31,13 +32,11 @@ export default function Trending() {
     <div className={styles.trendingContainer}>
       {searchedGifs &&
         searchedGifs.map((trendingGif: IMinimizedGif) => (
-          <img
-            loading="lazy"
-            data-testid="trendings"
-            ref={searchedGif}
+          <Image
             key={nanoid()}
-            src={trendingGif.source}
-            title={trendingGif.title}
+            thumb={trendingGif.thumb}
+            source={trendingGif.source}
+            ref={searchedGif}
             width={trendingGif.width}
             height={trendingGif.height}
           />
