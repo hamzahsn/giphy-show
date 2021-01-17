@@ -1,7 +1,7 @@
 import { IMinimizedGif } from '@typings/'
 import React, { useState } from 'react'
 import { searchTrendingGif } from '../../services/giphy'
-import styles from './TrendingGifs.scss'
+import styles from './Trending.scss'
 
 export default function TrendingGifs() {
   const [searchedGifs, setSearchedGifs] = useState<IMinimizedGif[]>([])
