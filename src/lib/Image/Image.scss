@@ -1,0 +1,22 @@
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+  background: rgba(187, 181, 181, 0.849);
+  display: block;
+}
+
+.full {
+  transition: opacity 400ms ease 0ms;
+}
+
+.thumb {
+  filter: blur(10px);
+  transform: scale(1.1);
+  transition: visibility 0ms ease 400ms;
+  visibility: visible;
+}
