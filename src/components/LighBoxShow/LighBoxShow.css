@@ -1,0 +1,25 @@
+.imageLightbox {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.884);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: none; }
+
+.navigationArrow {
+  margin: 0px 20px;
+  cursor: pointer; }
+
+.lightBoxImage {
+  transition: all 200ms ease-in-out; }
+
+.exitKey {
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  cursor: pointer; }
