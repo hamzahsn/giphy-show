@@ -1,0 +1,23 @@
+.searchContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.imagesContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+.imagesContainer::-webkit-scrollbar {
+  display: none;
+}
