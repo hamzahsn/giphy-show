@@ -11,7 +11,11 @@
     "watch:css": "npm run build:css && node-sass src/ -o src/ -w -r",
     "dev:client": "cross-env NODE_ENV=development webpack serve --config config/webpack.config.js",
     "start:client": "run-p watch:css dev:client",
-    "build:client": "cross-env NODE_ENV=production webpack --config config/webpack.config.js"
+    "build:client": "cross-env NODE_ENV=production webpack --config config/webpack.config.js",
+    "test": "jest",
+    "test:watch": "jest --watch --detectOpenHandles",
+    "test:coverage": "jest --watchAll --coverage",
+    "test:update": "jest --updateSnapshot"
   },
   "husky": {
     "hooks": {
