@@ -1,10 +1,11 @@
 import React from 'react'
-import { Trendings } from './components/index'
+import { Trendings, SearchGiphy } from './components/index'
 import './App.scss'
 
 export function App() {
   return (
     <>
+      <SearchGiphy />
       <Trendings />
     </>
   )
