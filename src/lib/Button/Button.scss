@@ -1,0 +1,24 @@
+$form-data-margin: 0 10px;
+$radius: 25px;
+
+.base {
+  font-size: 19px;
+  margin: $form-data-margin;
+  border-radius: $radius;
+  width: 20vw;
+  max-width: 280px;
+  overflow: hidden;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+
+  &.primary {
+    height: 50px;
+    width: 20vw;
+  }
+
+  &.secondary {
+    padding: 10px;
+    width: 20vw;
+  }
+}
