@@ -1,0 +1,43 @@
+.base {
+  margin: 0 10px;
+  width: 20vw;
+  max-width: 280px;
+  overflow: hidden;
+  appearance: none;
+  border: 0;
+  font-family: inherit;
+  padding: 5px 14px 0 20px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 25px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.15s ease;
+
+  &.primary {
+    background: rgba(241, 238, 238, 0.938);
+    color: rgb(180, 185, 199);
+  }
+
+  &.primary:focus {
+    background: rgba(12, 12, 12, 0.3);
+    outline: none;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  &.primary:hover {
+    background: rgba(12, 12, 12, 0.3);
+    box-shadow: inset 0 -1px 0 rgba(75, 87, 156, 0.5);
+  }
+
+  &.secondary {
+    background: rgba(15, 4, 4, 0.02);
+    color: rgb(7, 9, 15);
+  }
+}
+
+.LabelInputContainer {
+  color: white;
+  display: flex;
+  align-items: center;
+}
