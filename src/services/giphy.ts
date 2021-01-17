@@ -1,5 +1,5 @@
 import { IGif } from '@typings/'
-const limit = 5
+const limit = 10
 
 export const searchTrendingGif = (offset = 10) => {
   return fetch(
