@@ -78,7 +78,8 @@ module.exports = {
             options: {
               importLoaders: 2,
               modules: {
-                exportLocalsConvention: 'camelCase'
+                exportLocalsConvention: 'camelCase',
+                localIdentName: IS_DEV ? '[local]' : '[hash:base64]'
               },
               sourceMap: IS_DEV
             }
@@ -129,15 +130,15 @@ module.exports = {
       filename: 'index.html',
       inject: 'body'
     }),
-    IS_DEV && new BundleAnalyzerPlugin(),
-    IS_DEV &&
+    !IS_DEV && new BundleAnalyzerPlugin(),
+    !IS_DEV &&
       new BrotliPlugin({
         test: /\.(js|css|html|svg)$/,
         threshold: 10240,
         minRatio: 0.8
       }),
     new Dotenv({
-      path: paths.root + '/.env',
+      path: paths.root + '/.env.example',
       safe: true,
       silent: true
     })
