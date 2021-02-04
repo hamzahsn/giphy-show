@@ -130,7 +130,7 @@ module.exports = {
       filename: 'index.html',
       inject: 'body'
     }),
-    !IS_DEV && new BundleAnalyzerPlugin(),
+    IS_DEV && new BundleAnalyzerPlugin(),
     !IS_DEV &&
       new BrotliPlugin({
         test: /\.(js|css|html|svg)$/,
