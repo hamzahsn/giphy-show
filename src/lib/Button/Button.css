@@ -8,11 +8,9 @@
   border: none;
   color: inherit;
   cursor: pointer; }
-
-.base.primary {
-  height: 50px;
-  width: 20vw; }
-
-.base.secondary {
-  padding: 10px;
-  width: 20vw; }
+  .base.primary {
+    height: 50px;
+    width: 20vw; }
+  .base.secondary {
+    padding: 10px;
+    width: 20vw; }
