@@ -53,6 +53,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
       - name: Lint StyleLint
         run: npm run lint
 
@@ -66,3 +67,12 @@ jobs:
     steps:
       - name: Unit Tests
       - run: npm run test
+        
+  build:
+    name: Build Dashboard
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+      - run: npm run build
