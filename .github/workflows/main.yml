@@ -53,14 +53,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Lint ESLINT
+      - name: Lint StyleLint
         run: npm run lint
 
       - name: Lint StyleLint
         run: npm run style:lint
 
   unit-tests:
+    name: Unit tests
     runs-on: ubuntu-latest
 
     steps:
